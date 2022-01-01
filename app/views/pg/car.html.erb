@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+      	<li style="font-size: 18px;" ><a href="about">About</a></li>
+      	<li style="font-size: 18px;" class="nav-item dropdown">
+      		
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="personal">Personal Loan</a><br>
+    				<a class="dropdown-item" href="homeloan">Home Loan</a><br>
+    				<a class="dropdown-item" href="education">Education Loan</a><br>
+    				<a class="dropdown-item" href="car">Car Loan</a><br>
+    				<a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+          </div>
+        </li>
+    		<li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+     		<li style="font-size: 18px;"><a href="plans">Plans</a></li>
+      	
+      	<li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+      	
+    </ul>
+  </div>
+</nav>
+
+<h1 style="text-align:center">CAR LOAN</h1>
+<%= image_tag("c1.jpg", :style => 'height: 500px; width: 900px; position:relative; right:25%; left:25%')%>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2>Features</h2>
+            <ul>
+            A car loan (also known as an automobile loan, or auto loan) is a sum of money a consumer borrows in order to purchase a car. Car loans follow most of the same rules and procedures that apply to other loans. In most cases when purchasing a car, a borrower will specifically apply for a car loan; All car loans are for specific lengths of time, generally anywhere between 24 and 60 months, although some car loans can be for longer periods. Car loans generally include a variety of fees and taxes, which are added to the total loan amount
+</ul>
+</div>
+
+<div class="col-xs-4">
+	<h2>Eligibility</h2>
+
+<ul>
+	<li>Nationality - citizen of india</li>
+	<li>Age of the applicant should be more than 21 while applying</li>
+	<li>Age of salaried applicant should not be more than 60 and not more than 65 for the Self-Employed</li>
+	<li>Minimum annual Income should be 3 lacs</li>
+
+
+    </div>
+      <div class="col-xs-4">
+      <h2>Documents required</h2>
+<ul>
+        <li>Telephone Bill/ Electricity Bill/ Shop & Establishment act Certificate/ SSI or MSME Registration Certificate/ Sales Tax or VAT Certificate/ Current A/c Statement/ Regd Lease with other Utility Bills</li>
+<li>Latest ITR</li>
+<li>Latest 3 months Bank Statement</li>
+<li>PAN / Driving Licence/ Passport/ Birth Certificate</li>
+<li>PAN / Passport/ Bankers Verification</li>
+<li>Copy of Appointment Letter/ Date of Joining on Salary Slip/ ITR of Form 16/ Work Experience Certificate/ Relieving letter or Shop & Establishment act Certificate/ SSI or MSME Registration Certificate/ Sales Tax or VAT Certificate/ Current A/c Stateme</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="text-align:center;">
+<a href="eligibility" class="btn btn-info">Check Eligibility</a>
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>welc</title>
+    <style>
+        body{
+            background-image: url(/assets/w.jpg);
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome !!!</h1>
+<br>
+<%= link_to "HOME ", controller: "pg", action: 'homepg' %>
+<br><br><br><br>
+ <%= link_to "Log Out ", controller: "sessions", action: 'destroy' %>
+</body>
+</html>

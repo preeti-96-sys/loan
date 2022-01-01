@@ -1,0 +1,203 @@
+<html>
+<head>
+	<title>plns</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+p{
+	font-size: 25px;
+}
+th{
+	width: 400px;
+	height: 65px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+}
+td{
+	width: 200px;
+	height: 45px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+	<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+      	<li style="font-size: 18px;"><a href="about">About</a></li>
+      	<li style="font-size: 18px;" class="nav-item dropdown">
+  
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="personal">Personal Loan</a><br>
+    				<a class="dropdown-item" href="homeloan">Home Loan</a><br>
+    				<a class="dropdown-item" href="education">Education Loan</a><br>
+    				<a class="dropdown-item" href="car">Car Loan</a><br>
+    				<a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+    			</div>
+    		</li>
+    		<li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+     		<li style="font-size: 18px;"><a href="plans">Plans</a></li>
+      	
+      	<li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+      	
+    </ul>
+  </div>
+</nav>
+<br><br>
+<div style="text-align:center;">
+<a href="#my-section1" class="btn btn-info">Home Loan Plans</a>
+<br><br>
+<a href="#my-section2" class="btn btn-info">Personal Loan Plans</a><br><br>
+<a href="#my-section3" class="btn btn-info">Car Loan Plans</a>
+<br><br>
+<a href="#my-section4" class="btn btn-info">Education Loan Plans</a>
+
+</div>
+
+<br><br>
+<div style="text-align:center;"><%= image_tag "welcome3.jpg", height:500 %></div>
+
+<div id="my-section1">
+<div style="padding: 3%; margin-left: 8%;">
+<table>
+	<thead>
+	<p>Home Loan Plans</p>
+	<tr>
+		<th>Loan Slab</th>
+		<th>Interest Rates</th>
+		<th>Tenure</th>
+	</tr>
+	</thead>
+		
+	<tbody>
+	<tr>
+		<td>Upto 30 lakhs</td>
+		<td>6.7% to 7.4%</td>
+		<td>Upto 4 years</td>
+	</tr>
+
+	<tr>
+		<td>From 30.01 lakhs to 75 lakhs</td>
+		<td>7% to 7.6%</td> 
+		<td>Upto 4 years</td>
+	</tr>
+
+	<tr>
+		<td>Upto 75.01 lakhs and above</td>
+		<td>7.1% to 7.7%</td> 
+		<td>Upto 5 years</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<br>
+<br><br><br><br>
+<div id="my-section2">
+<div style="padding: 3%; margin-left: 8%;">
+<table>
+	<thead>
+		<p>Personal Loan Plans</p>
+		<tr>
+			<th>Loan Slab</th>
+			<th>Interest Rates</th>
+			<th>Tenure</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Upto 20 lakhs</td>
+			<td>10%</td>
+			<td>Upto 3 years</td>
+		</tr>
+
+		<tr>
+			<td>From 20.01 lakhs to 30 lakhs</td>
+			<td>12%</td>
+			<td>Upto 4 years</td>
+		</tr>
+
+		<tr>
+			<td>Upto 30.01 lakhs to 50 lakhs</td>
+			<td>13%</td>
+			<td>Upto 5 years</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<br><br><br><br>
+<div id="my-section3">
+<div style="padding: 3%; margin-left: 8%;">
+<table>
+	<thead>
+		<p>Car Loan Plans</p>
+		<tr>
+			<th>Loan Slab</th>
+			<th>Interest Rates</th>
+			<th>Tenure</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>From 5 lakhs to 30 lakhs</td>
+			<td>7%</td>
+			<td>1 to 7 years</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<br><br><br><br>
+<div id="my-section4">
+<div style="padding: 3%; margin-left: 20%;">
+<table>
+	<thead>
+		<p>Education Loan Plans</p>
+		<tr>
+			<th>Loan Slab</th>
+			<th>Interest Rates</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Upto 10 lakhs</td>
+			<td>6% to 8%</td>
+		</tr>
+
+		<tr>
+			<td>From 10.01 lakhs to 50 lakhs</td>
+			<td>6.5% to 8.2%</td>
+		</tr>
+
+		<tr>
+			<td>From 50.01 lakhs to 1 Crore</td>
+			<td>6.8% to 9%</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<br><br><br>
+<p style="text-align:center;">ALL THE BEST!!! MAY ALL YOUR DREAMS COME TRUE!!!</p>
+<br><br><br><br><br><br><br><br>
+<p> </p>
+<p> </p>
+</body>
+</html>

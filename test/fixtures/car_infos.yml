@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Age: 1
+  Phone: 1
+  Nationality: MyString
+  Annual_Income: 1
+  On_Road_Price_Of_Car: 1
+  Desired_Loan_Amount: 1
+
+two:
+  Name: MyString
+  Age: 1
+  Phone: 1
+  Nationality: MyString
+  Annual_Income: 1
+  On_Road_Price_Of_Car: 1
+  Desired_Loan_Amount: 1

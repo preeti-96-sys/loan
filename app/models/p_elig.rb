@@ -1,0 +1,2 @@
+class PElig < ApplicationRecord
+end

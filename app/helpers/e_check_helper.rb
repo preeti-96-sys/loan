@@ -1,0 +1,2 @@
+module ECheckHelper
+end

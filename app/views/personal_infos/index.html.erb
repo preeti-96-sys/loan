@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Personal Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Age</th>
+      <th>Cibil score</th>
+      <th>Nationality</th>
+      <th>Net monthly income</th>
+      <th>Desired loan amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personal_infos.each do |personal_info| %>
+      <tr>
+        <td><%= personal_info.Name %></td>
+        <td><%= personal_info.Phone %></td>
+        <td><%= personal_info.Age %></td>
+        <td><%= personal_info.Cibil_Score %></td>
+        <td><%= personal_info.Nationality %></td>
+        <td><%= personal_info.Net_Monthly_Income %></td>
+        <td><%= personal_info.Desired_Loan_Amount %></td>
+        <td><%= link_to 'Show', personal_info %></td>
+        <td><%= link_to 'Edit', edit_personal_info_path(personal_info) %></td>
+        <td><%= link_to 'Destroy', personal_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personal Info', new_personal_info_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Guardian_or_Parent_Name: MyString
+  Phone: 1
+  Age_of_Student: 1
+  Course_Name: MyString
+  Duration_Of_Course_in_years: 1
+
+two:
+  Name: MyString
+  Guardian_or_Parent_Name: MyString
+  Phone: 1
+  Age_of_Student: 1
+  Course_Name: MyString
+  Duration_Of_Course_in_years: 1

@@ -1,0 +1,2 @@
+class PgController < ApplicationController
+end

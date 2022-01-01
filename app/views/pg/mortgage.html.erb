@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>mortgage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+            
+        <li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+        <li style="font-size: 18px;"><a href="about">About</a></li>
+        <li style="font-size: 18px;" class="nav-item dropdown">
+            
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="personal">Personal Loan</a><br>
+                    <a class="dropdown-item" href="homeloan">Home Loan</a><br>
+                    <a class="dropdown-item" href="education">Education Loan</a><br>
+                    <a class="dropdown-item" href="car">Car Loan</a><br>
+                    <a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+                </div>
+            </li>
+        <li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+        <li style="font-size: 18px;"><a href="plans">Plans</a></li>
+        
+        <li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+        
+    </ul>
+  </div>
+</nav>
+<h1 style="text-align:center">MORTGAGE LOAN</h1>
+<%= image_tag("m1.jpg", :style => 'height: 500px; width: 900px; position:relative; right:25%; left:25%')%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2>Features</h2>
+            <ul>Loan against a property or a mortgage loan is a loan used either by purchasers of real property to raise funds to buy real estate, or by existing property owners to raise funds for any purpose against property, shares as security or collateral. The loan is "secured" on the borrower's property through a process known as mortgage origination. This means that a legal mechanism is put into place which allows the lender to take possession and sell the secured property to pay off the loan in the event the borrower defaults on the loan or otherwise fails to abide by its terms</ul>
+
+
+        </div>
+        <div class="col-xs-4">
+            <h2>Eligibility</h2>
+
+<ul>
+    <li>Nationality - citizen of india</li>
+        <li>Age of the applicant must be more than 18 and less than 70 years of age</li>
+        <li>Minimum required Cibil is score 750</li>
+        <li>Work experience for Salaried applicant should be more than 3 years</li>
+</ul>
+
+
+    </div>
+      <div class="col-xs-4">
+      <h2>Documents required</h2>
+<ul>
+        <li>Duly filled Application Form with Photograph</li>
+    <li>Age Proof (PAN Card, Passport, Any other Certificate from Statutory Authority)</li>
+    <li>Residence Proof (Passport, Driving License, Telephone Bill, Ration Card, Election Card, Any other Certificate from Statutory Authority)</li>
+    <li>Education Qualifications – Latest Degree</li>
+    <li>Latest Salary-slips for 3 months</li>
+    <li>Form 16 for last 2 years</li>
+    <li>Last 6 months Bank Statements(salary account)</li>
+    <li>Photocopy of Title Documents of the Property, Approved Plan</li>
+</ul>
+</div>
+</div>
+</div>
+
+    
+
+    <ul>
+        DOCS
+    </ul>
+    
+<div style="text-align:center;">
+<a href="eligibility" class="btn btn-info">Check Eligibility</a>
+
+</div>
+
+
+</body>
+</html>

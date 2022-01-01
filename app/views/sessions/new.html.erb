@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>log</title>
+  <style>
+    body{
+      background-image: url('/assets/l.jpg');
+      background-repeat: no-repeat;
+      background-position: 340px 180px ;
+      text-align: center;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+<strong>
+<p id='alert'><%= alert %></p>
+<br>
+<%= form_tag sessions_path do |form| %>
+ <div class='field'>
+   <%= label_tag :email %>
+   <%= text_field_tag :email %>
+ </div>
+
+ <br>
+
+ <div class='field'>
+   <%= label_tag :password %>
+   <%= password_field_tag :password %>
+ </div>
+
+ <div class='actions'>
+   <%= submit_tag 'Login' %>
+ </div>
+
+<% end %>
+</strong>
+
+</body>
+</html>

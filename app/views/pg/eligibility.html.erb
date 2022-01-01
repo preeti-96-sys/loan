@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+
+
+</head>
+<body>
+  <nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+      
+        <li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+        <li style="font-size: 18px;"><a href="about">About</a></li>
+        <li style="font-size: 18px;" class="nav-item dropdown">
+  
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="personal">Personal Loan</a><br>
+            <a class="dropdown-item" href="homeloan">Home Loan</a><br>
+            <a class="dropdown-item" href="education">Education Loan</a><br>
+            <a class="dropdown-item" href="car">Car Loan</a><br>
+            <a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+          </div>
+        </li>
+        <li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+        <li style="font-size: 18px;"><a href="plans">Plans</a></li>
+        
+        <li style="font-size: 18px;" ><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+        
+    </ul>
+  </div>
+</nav>
+
+<div style="text-align:center;">
+<h1>Check if you are ELIGIBLE to Avail loan!!!</h1>
+<br>
+
+<h2>Personal loan!!!</h2><%= image_tag "eligp.jpg", height:150 %><br>
+<a style="font-size: 25px;" href="../personal_infos/new">Check</a>
+<br><br><br>
+
+<h2>Home loan!!!</h2><%= image_tag "eligh.jpg", height:180 %><br>
+<a style="font-size: 25px;" href="../home_infos/new">Check</a>
+<br><br><br>
+
+<h2>Education loan!!!</h2><%= image_tag "elige.jpg", height:180 %><br>
+<a style="font-size: 25px;" href="../education_infos/new">Check</a>
+<br><br><br>
+
+<h2>Car loan!!!</h2><%= image_tag "eligc.jpg", height:150 %><br>
+<a style="font-size: 25px;" href="../car_infos/new">Check</a>
+<br><br><br>
+
+<h2>Mortgage loan!!!</h2><%= image_tag "eligm.jpg", height:150 %><br>
+<a style="font-size: 25px;" href="../mortgage_infos/new">Check</a>
+<br><br><br>
+</div>
+
+</body>
+</html>

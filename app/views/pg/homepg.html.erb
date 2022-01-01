@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>welcome</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+<style>
+	.mrg{
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+
+</style>
+
+</head>
+
+<body>
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+      	<li style="font-size: 18px;"><a href="about">About</a></li>
+      	<li style="font-size: 18px;" class="nav-item dropdown">
+  
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="personal">Personal Loan</a><br>
+    				<a class="dropdown-item" href="homeloan">Home Loan</a><br>
+    				<a class="dropdown-item" href="education">Education Loan</a><br>
+    				<a class="dropdown-item" href="car">Car Loan</a><br>
+    				<a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+    			</div>
+    		</li>
+    		<li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+     		<li style="font-size: 18px;"><a href="plans">Plans</a></li>
+      	
+      	<li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+      	
+    </ul>
+  </div>
+</nav>
+
+
+<h1 style="text-align: center;">Welcome to LOAN Den</h1>
+
+<div style="text-align:center;">
+<a href="#m1" class="btn btn-info">Go To Loans</a>
+</div>
+
+<br>
+
+
+<div style="text-align:center;">
+<%= image_tag("welcome1.jpg", :style => 'height: 550px; width: 1000px; ')%>
+</div>
+
+
+<div id="m1">
+
+<div class="container">
+<div class="mrg">
+<div class="row">
+	<br>
+	<div class="col-md-4"><a href="personal"><%= image_tag("loan1.jpg", :style => 'height: 250px; width: 300px; ')%><br>Personal loan</a></div>
+
+	
+	
+	
+
+		<br>
+</div>
+
+<div class="row">
+	<br>
+		<div class="col-md-4"><a href="homeloan"><%= image_tag("loan2.jpg", :style => 'height: 250px; width: 300px; ')%><br>HomeLoan</a></div>
+		<br>
+</div>
+
+
+<div class="row">
+	<br>
+		<div class="col-md-4"><a href="education"><%= image_tag("edu1.jpg", :style => 'height: 250px; width: 300px; ')%><br>Education loan</a></div>
+		<br>
+</div>
+
+<div class="row">
+	<br>
+		<div class="col-md-4"><a href="car"><%= image_tag("car1.jpg", :style => 'height: 250px; width: 300px; ')%><br>Car loan</a></div>
+		<br>
+</div>
+
+<div class="row">
+	<br>
+		<div class="col-md-4"><a href="mortgage"><%= image_tag("mort1.jpg", :style => 'height: 250px; width: 300px; ')%><br>Mortgage loan</a></div>
+		<br>
+</div>
+
+</div>	
+</div>
+
+</body>
+</html>

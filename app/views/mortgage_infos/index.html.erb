@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mortgage Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Phone</th>
+      <th>Nationality</th>
+      <th>Cibil score</th>
+      <th>Net monthly income</th>
+      <th>Desired loan amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mortgage_infos.each do |mortgage_info| %>
+      <tr>
+        <td><%= mortgage_info.Name %></td>
+        <td><%= mortgage_info.Age %></td>
+        <td><%= mortgage_info.Phone %></td>
+        <td><%= mortgage_info.Nationality %></td>
+        <td><%= mortgage_info.Cibil_Score %></td>
+        <td><%= mortgage_info.Net_Monthly_Income %></td>
+        <td><%= mortgage_info.Desired_Loan_Amount %></td>
+        <td><%= link_to 'Show', mortgage_info %></td>
+        <td><%= link_to 'Edit', edit_mortgage_info_path(mortgage_info) %></td>
+        <td><%= link_to 'Destroy', mortgage_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mortgage Info', new_mortgage_info_path %>

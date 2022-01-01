@@ -1,0 +1,47 @@
+<%= form_with(model: education_info) do |form| %>
+  <% if education_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(education_info.errors.count, "error") %> prohibited this education_info from being saved:</h2>
+
+      <ul>
+        <% education_info.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Name %>
+    <%= form.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Guardian_or_Parent_Name %>
+    <%= form.text_field :Guardian_or_Parent_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Phone %>
+    <%= form.number_field :Phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Age_of_Student %>
+    <%= form.number_field :Age_of_Student %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Course_Name %>
+    <%= form.text_field :Course_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Duration_Of_Course_in_years %>
+    <%= form.number_field :Duration_Of_Course_in_years %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

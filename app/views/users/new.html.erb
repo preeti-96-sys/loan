@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>signup</title>
+	<h1>SIGN UP!!!</h1>
+	<style>
+	body{
+      background-image: url('/assets/n.jpg');
+      background-repeat: no-repeat;
+      background-color: lightblue;
+      background-position: center;
+      font-size: 15px;
+      text-align: justify;
+  </style>
+</head>
+
+<body>
+<%= render 'form', user: @user %>
+
+<%= link_to "Back ", controller: "home", action: 'index', class: "back-link"  %>
+</body>
+</html>
+

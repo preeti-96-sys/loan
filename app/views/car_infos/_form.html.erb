@@ -1,0 +1,52 @@
+<%= form_with(model: car_info) do |form| %>
+  <% if car_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(car_info.errors.count, "error") %> prohibited this car_info from being saved:</h2>
+
+      <ul>
+        <% car_info.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Name %>
+    <%= form.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Age %>
+    <%= form.number_field :Age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Phone %>
+    <%= form.number_field :Phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Nationality %>
+    <%= form.text_field :Nationality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Annual_Income %>
+    <%= form.number_field :Annual_Income %>
+  </div>
+
+  <div class="field">
+    <%= form.label :On_Road_Price_Of_Car %>
+    <%= form.number_field :On_Road_Price_Of_Car %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Desired_Loan_Amount %>
+    <%= form.number_field :Desired_Loan_Amount %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

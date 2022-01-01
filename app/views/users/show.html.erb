@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>show</title>
+  <h1>Details</h1>
+  <style>
+    body{
+      text-align: center;
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @user.mobile %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
+<a href="../home/index">Done</a>
+
+
+</body>
+</html>

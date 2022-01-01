@@ -1,0 +1,2 @@
+class Loanc < ApplicationRecord
+end

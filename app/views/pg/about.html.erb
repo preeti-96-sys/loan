@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+      	<li style="font-size: 18px;" ><a href="about">About</a></li>
+      	<li style="font-size: 18px;" class="nav-item dropdown">
+      		
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="personal">Personal Loan</a><br>
+    				<a class="dropdown-item" href="homeloan">Home Loan</a><br>
+    				<a class="dropdown-item" href="education">Education Loan</a><br>
+    				<a class="dropdown-item" href="car">Car Loan</a><br>
+    				<a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+          </div>
+        </li>
+    		<li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+     		<li style="font-size: 18px;"><a href="plans">Plans</a></li>
+      	
+      	<li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+      	
+    </ul>
+  </div>
+</nav>
+<div style="padding:2%; text-align: justify;">
+<h1>About US</h1>
+<h4>&nbsp &nbsp The Loan Den application is a loan management system which provides information about Persoanl Loan, Home Loan, Education Loan, Car Loan and Mortgage Loan. Applicant should produce the credentials and other salary and income details for the contact purposes. The applicant can check the eligibility to avail particular loan and then if eligible, appply for the loan and produce the required documents.</h4>
+<h1>Simple steps to be followed to avail loans:</h1>
+<h4>&nbsp &nbsp Fill up the online application form </h4>
+<h4>&nbsp &nbsp Our represntative will make sure to reach out to you in 24 hours</h4>
+<h4>&nbsp &nbsp Handover all the essential documents to initiate the process</h4>
+<h4>&nbsp &nbsp Approval of your loan will be done in the next 72 hours</h4>
+</div>
+
+<a href="eligibility"><h3 style="text-align:center; color: purple;">Please make sure you meet all the eligibility criterion before applying for any type of loan!!!</h3></a>
+</body>
+</html>

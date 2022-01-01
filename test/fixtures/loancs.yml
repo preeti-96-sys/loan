@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Phone: 1
+  City: MyString
+  Desired_Loan: 1
+  Net_monthly_income: 1
+
+two:
+  Name: MyString
+  Phone: 1
+  City: MyString
+  Desired_Loan: 1
+  Net_monthly_income: 1

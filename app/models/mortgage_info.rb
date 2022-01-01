@@ -1,0 +1,2 @@
+class MortgageInfo < ApplicationRecord
+end

@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>personal_elig</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+      
+        <li style="font-size: 18px;" class="active"><a href="../pg/homepg">Home</a></li>
+        <li style="font-size: 18px;"><a href="about">About</a></li>
+        <li style="font-size: 18px;" class="nav-item dropdown">
+  
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="personal">Personal Loan</a><br>
+            <a class="dropdown-item" href="homeloan">Home Loan</a><br>
+            <a class="dropdown-item" href="education">Education Loan</a><br>
+            <a class="dropdown-item" href="car">Car Loan</a><br>
+            <a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+          </div>
+        </li>
+        <li style="font-size: 18px;"><a href="../pg/eligibility">Eligibility</a></li>
+        <li style="font-size: 18px;"><a href="../pg/plans">Plans</a></li>
+        
+        <li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+        
+    </ul>
+  </div>
+</nav>
+<p id="notice"><%= notice %></p>
+<div style="padding:3%;">
+
+<p>
+  <strong>Name:</strong>
+  <%= @car_info.Name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @car_info.Age %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @car_info.Phone %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @car_info.Nationality %>
+</p>
+
+<p>
+  <strong>Annual income:</strong>
+  <%= @car_info.Annual_Income %>
+</p>
+
+<p>
+  <strong>On road price of car:</strong>
+  <%= @car_info.On_Road_Price_Of_Car %>
+</p>
+
+<p>
+  <strong>Desired loan amount:</strong>
+  <%= @car_info.Desired_Loan_Amount %>
+</p>
+
+<div style="color: red; font-size: 24px;">
+
+<% l=0 %>
+<% t=0 %>
+
+<% if @car_info.Age<21 or @car_info.Age>65 %>
+  <%= 'You are not eligible, age criteria is not satisfied (Applicant should be between 21 and 65 years of age)' %>
+<% else %>
+<% t=t+1 %>
+<% end %>
+
+<br>
+
+<% if @car_info.Annual_Income < 300000 %>
+  <%= 'Your Annual Income is lesser than required, you cannot avail the loan (Minimum Annual Income required to avail the loan is Rs.3 lacs)' %>
+  <% else %>
+  <% t=t+1 %>
+<% end %>
+</div>
+
+<div style="font-size:24px; color: blue;">
+<% if t==2 %>
+<%= "Congrats!!! You are eligible, you can AVAIL car loan" %>
+<% end %>
+</div>
+
+</div>
+<br>
+
+
+</body>
+</html>
+

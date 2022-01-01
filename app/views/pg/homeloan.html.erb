@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+			
+      	<li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+      	<li style="font-size: 18px;" ><a href="about">About</a></li>
+      	<li style="font-size: 18px;" class="nav-item dropdown">
+      		
+      		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+      		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      			<a class="dropdown-item" href="personal">Personal Loan</a><br>
+    				<a class="dropdown-item" href="homeloan">Home Loan</a><br>
+    				<a class="dropdown-item" href="education">Education Loan</a><br>
+    				<a class="dropdown-item" href="car">Car Loan</a><br>
+    				<a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+          </div>
+        </li>
+    		<li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+     		<li style="font-size: 18px;"><a href="plans">Plans</a></li>
+      	
+      	<li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+      	
+    </ul>
+  </div>
+</nav>
+
+<h1 style="text-align:center">HOME LOAN</h1>
+<%= image_tag("h1.jpg", :style => 'height: 500px; width: 900px; position:relative; right:25%; left:25%')%>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2>Features</h2>
+            <ul>A house loan or home loan simply means a sum of money borrowed from a financial institution or bank to purchase a house. People generally take a home loan for either buying a house or renovation, extension and repairs to the existing house. The interest rates for home loans can be fixed or floating, suiting the needs of the borrower.</ul>
+		</div>
+
+      	<div class="col-xs-4">
+         <h2>Eligibility</h2>
+
+		<ul>
+			<li>Nationality - resident of India</li>
+			<li>For a salaried individual, age should be in between 23 to 62</li>
+			<li>Required minimum Cibil score is 750</li>
+			<li>Work experience for salaried applicants must be atleast 3 years</li>
+			<li>For self employed individuals, Business continuity should be atleast 5 years</li>
+		</ul>
+
+
+    </div>
+      <div class="col-xs-4">
+      <h2>Documents required</h2>
+<ul>
+        <li>Receipts for taxes paid for Building and Land, certificate of possession, and certified sketch of the location of property from revenue authorities.</li>
+        <li>Allotment Letter from Society/Housing Board/Private builder.</li>
+        <li>Receipts of advance payments for flat purchase.</li>
+        <li>Certificate of Non encumbrance encompassing the last 12 years/30 years.</li>
+        <li>Receipt of land tax payment and certificate of possession issued by revenue authorities.</li>
+        <li>Permission letter from Appropriate Authority.</li>
+        <li>Approved building plan (showing floor plan for flat purchase).</li>
+        <li>Original No Objection Certificate issued under the ULC Act, 1976.</li>
+        <li>Copy of relative order if agricultural land is being converted.</li>
+        <li>No objection certificate (NOC) from Builder/Housing Society.</li>
+        <li>Detailed estimate of construction cost.</li>
+        <li>Letter from Society/Builder/Housing Board mentioning their bank and account details, for installment remittance.</li>
+        <li>Applicable for purchase of land plot, a declaration by loan borrower stipulating the date by which to construct a house.</li>
+        <li>Report from lawyer as per standard format.</li>
+        <li>Report stating the valuation of property in standard format by an empanelled valuer.</li>
+        <li>Post closure of loan, documents required for handover of original Property documents</li>
+        <li>Power Of Attorney for collecting original documents of Property.</li>
+        <li>In event of demise of the loan borrower:</li>
+        	<ul>
+        		<li>Letter requesting handing over of Property documents from Legal Heir/Nominee(s).</li>
+        		<li>Letter relinquishing the right to Legal Heirs/Nominees for Property documents handover.</li></ul>
+
+</ul>
+</div>
+</div>
+</div>
+
+<div style="text-align:center;">
+<a href="eligibility" class="btn btn-info">Check Eligibility</a>
+
+</div>
+
+</body>
+</html>

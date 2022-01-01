@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>home</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+<h1>WELCOME to Loan DEN !!!</h1>
+</head>
+
+<body style="text-align:center; background-color: lightblue;">
+
+
+<% if current_user %>
+ Logged in as <%= current_user.email %>.
+ <%= link_to 'Log Out', logout_path %>
+<% else %>
+<h2>New User??</h2>
+ <%= link_to 'Sign Up', signup_path %> 
+
+ <br><br>
+ <h2>Already a member??</h2>
+ <%= link_to 'Log In', login_path %>
+<% end %>
+<p id='notice'><%= notice %></p>
+<%= image_tag("w1.jpg", :style => 'height: 500px; width: 900px; ')%>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>personal_elig</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+      
+        <li style="font-size: 18px;" class="active"><a href="../pg/homepg">Home</a></li>
+        <li style="font-size: 18px;"><a href="../pg/about">About</a></li>
+        <li style="font-size: 18px;" class="nav-item dropdown">
+  
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../pg/personal">Personal Loan</a><br>
+            <a class="dropdown-item" href="../pg/homeloan">Home Loan</a><br>
+            <a class="dropdown-item" href="../pg/education">Education Loan</a><br>
+            <a class="dropdown-item" href="../pg/car">Car Loan</a><br>
+            <a class="dropdown-item" href="../pg/mortgage">Mortgage Loan</a><br>
+          </div>
+        </li>
+        <li style="font-size: 18px;"><a href="../pg/eligibility">Eligibility</a></li>
+        <li style="font-size: 18px;"><a href="../pg/plans">Plans</a></li>
+        
+        <li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+        
+    </ul>
+  </div>
+</nav>
+
+<div style="padding:3%;">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @home_info.Name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @home_info.Age %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @home_info.Phone %>
+</p>
+
+<p>
+  <strong>Cibil score:</strong>
+  <%= @home_info.Cibil_Score %>
+</p>
+
+<p>
+  <strong>Net monthly income:</strong>
+  <%= @home_info.Net_Monthly_Income %>
+</p>
+
+<p>
+  <strong>Desired loan amount:</strong>
+  <%= @home_info.Desired_Loan_Amount %>
+</p>
+<br>
+<br>
+<div style="color:red;font-size: 24px;">
+<% t=0 %>
+
+<% if @home_info.Age<21 or @home_info.Age>62 %>
+  <%= 'You are not eligible to avail loan, your age criteria is not staisfied (Applicant should be between 21 and 62 years of age)' %>
+<% else %>
+<% t=t+1 %>
+<% end %>
+
+<br>
+
+<% if @home_info.Cibil_Score < 750 %>
+  <%= 'Your Cibil Score is too low, you cannot avail loan(Minimum Cibil Score required is 750)' %>
+<% else %>
+<% t=t+1 %>
+<% end %>
+</div>
+<br>
+  
+<div style="font-size:24px; color:blue;">
+<% if t==2 %>
+<%= "Congrats!!! You are eligible, you can AVAIL home loan" %>
+<% end %>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>personal</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+
+</head>
+<body>
+<nav>
+  <div class="container">
+    <div class="navbar-header"></div>
+
+    <a href="#" style="align-content: left;"><%= image_tag "home1.jpg", height:100 %></a>
+    <ul class="nav navbar-nav navbar-right">
+            
+        <li style="font-size: 18px;" class="active"><a href="homepg">Home</a></li>
+        <li style="font-size: 18px;"><a href="about">About</a></li>
+        <li style="font-size: 18px;" class="nav-item dropdown">
+            
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Types of Loans</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="personal">Personal Loan</a><br>
+                    <a class="dropdown-item" href="homeloan">Home Loan</a><br>
+                    <a class="dropdown-item" href="education">Education Loan</a><br>
+                    <a class="dropdown-item" href="car">Car Loan</a><br>
+                    <a class="dropdown-item" href="mortgage">Mortgage Loan</a><br>
+                </div>
+            </li>
+        <li style="font-size: 18px;"><a href="eligibility">Eligibility</a></li>
+        <li style="font-size: 18px;"><a href="plans">Plans</a></li>
+        
+        <li style="font-size: 18px;"><%= link_to "Log Out ", controller: "sessions", action: 'destroy' %></li>
+        
+    </ul>
+  </div>
+</nav>
+<h1 style="text-align:center">PERSONAL LOAN</h1>
+<%= image_tag("p1.jpg", :style => 'height: 500px; width: 900px; position:relative; right:25%; left:25%')%>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2>Features</h2>
+            <ul>
+            A personal loan is an amount of money you can borrow to use for a variety of purposes. For instance, you may use a personal loan to consolidate debt, pay for home renovations, or plan a dream wedding. Personal loans can be offered by banks, credit unions, or online lenders. The money you borrow must be repaid over time, typically with interest.</ul>
+<ul>Personal loan is borrowed for various reasons like;
+	<li>wedding </li>
+	<li>travel</li>
+	<li>renovation</li>
+	<li>higher education</li>
+	<li>medical emergency</li>
+</ul>
+
+
+        </div>
+        <div class="col-xs-4">
+            <h2>Eligibility</h2>
+
+<ul>
+	<li>Cibil score of applicant must be 600+</li>
+	<li>Nationality - citizen of india</li>
+	<li>Age of applicant should be more than 21, while applying for loan</li>
+	<li>Applicant should not be crossing age of 65 at the time of loan maturity</li>
+	<li>Net monthly income must be more than 20000</li>
+</ul>
+
+
+    </div>
+      <div class="col-xs-4">
+      <h2>Documents required</h2>
+<ul>
+        <li>Loan application form.</li>
+        <li>3 photographs passport sized.</li>
+        <li>Identify proof</li>
+        <li>Residence proof</li>
+        <li>Bank Account Statement/Passbook for last 6 months.</li>
+        <li>Signature verification by bankers of the applicant.</li>
+        <li>Liabilities statement and Personal Assets.</li>
+        <li>Property detailed documents</li>
+        <li>Salary Certificate (original) from employer. (salaried individuals)</li>
+        <li>Form 16/IT Returns for the past 2 financial years. (salaried individuals)</li>
+        <li>IT Returns/Assessment Orders copies of the last 3 years. (self – employed professionals)</li>
+        <li>Challans as proof of Advance Income Tax payment. (self – employed professionals)</li>
+        <li>Proof of business address for non-salaried individuals. (self – employed professionals)</li>
+        <li>IT returns/Assessment Orders copies of the last 3 years. (Self – Employed Businessmen)</li>
+        <li>Challans as proof of Advance Income Tax payment. (Self – Employed Businessmen)</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div style="text-align:center;">
+<a href="eligibility" class="btn btn-info">Check Eligibility</a>
+
+</div>
+
+</body>
+</html>
